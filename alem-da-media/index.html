@@ -1709,7 +1709,7 @@ const VERSAO='alem-da-media-v2';
 const MODULO='alem-da-media';
 /* Endereço do receptor de respostas (Google Apps Script). Vazio = sem envio automático.
    Preenchido pelo scripts/build_site.py a partir de config/coleta.json. */
-const COLETA_URL="";
+const COLETA_URL="https://script.google.com/macros/s/AKfycbwmStqZ3u80nFxXybGl9dO8KygtBr09_HN6fzlgno4CZF47tPC8QoNKVsI0IhPQ05PyDQ/exec";
 const slug=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 (function(){const seen={}; R.forEach((q,i)=>{let s=slug(q.title); if(seen[s])s+='-'+(i+1); seen[s]=1; q.qid=s;});})();
 const LOG={aluno:'',turma:'',curso:'',sessao:Math.random().toString(36).slice(2,10),eventos:[],tries:{},enteredAt:Date.now(),lastText:{},envios:[]};
